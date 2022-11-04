@@ -21,7 +21,7 @@ public class Oder {
     @Column(name="oder_quantity")
     private int quantity;
     @Column(name="oder_create")
-    @Temporal(TemporalType.TIMESTAMP)
+//    @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date createDate;
     @Column(name="oder_status")

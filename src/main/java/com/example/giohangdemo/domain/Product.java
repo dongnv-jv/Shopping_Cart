@@ -22,6 +22,8 @@ public class Product {
     private double cost;
     @Column(name="product_decr")
     private String decription;
+    @Column(name="product_image")
+    private String images;
     @OneToMany(mappedBy = "product")
     private List<Oder> oders;
 
