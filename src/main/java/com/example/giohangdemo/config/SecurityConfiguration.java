@@ -22,7 +22,7 @@ public class SecurityConfiguration {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/add", "/home", "/").permitAll() // Cho phép tất cả mọi người truy cập vào 2 địa chỉ này
+                .antMatchers("/add", "/oder", "/", "/upload","/upload-csv-file","/update","/display","/delete").permitAll() // Cho phép tất cả mọi người truy cập vào 2 địa chỉ này
                 .anyRequest().authenticated() // Tất cả các request khác đều cần phải xác thực mới được truy cập
                 .and()
                 .formLogin() // Cho phép người dùng xác thực bằng form login
@@ -34,10 +34,10 @@ public class SecurityConfiguration {
         return http.build();
     }
 
-//    @Bean
-//    public WebSecurityCustomizer webSecurityCustomizer() {
-//        return (web) -> web.ignoring().antMatchers("/ignore1", "/ignore2");
-//    }
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().antMatchers("/static/**");
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
