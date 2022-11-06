@@ -98,17 +98,17 @@ public class ShoppingController {
     }
 
     @GetMapping("/display")
-    public String getAllProduct(@RequestParam("page") int page, Model model) {
+    public String getAllProduct(@RequestParam(value = "page",defaultValue = "1")  int page, Model model) {
 
         PageRequest pageRequest = PageRequest.of(page, 8);
         Page<Product> listProduct = shoppingService.getAllProduct(pageRequest.previousOrFirst());
-        listProduct.forEach(ddd->{
-            log.info(ddd.getCost()+"getCost");
-            log.info(ddd.getImages()+ " get Imaged");
-            log.info(ddd.getName()+ " get Name");
-            log.info(ddd.getDecription() + " get Decription");
-            log.info(ddd.getId()+"");
-        });
+//        listProduct.forEach(ddd->{
+//            log.info(ddd.getCost()+"getCost");
+//            log.info(ddd.getImages()+ " get Imaged");
+//            log.info(ddd.getName()+ " get Name");
+//            log.info(ddd.getDecription() + " get Decription");
+//            log.info(ddd.getId()+"");
+//        });
 
         model.addAttribute("listProduct", listProduct);
         return "index3";

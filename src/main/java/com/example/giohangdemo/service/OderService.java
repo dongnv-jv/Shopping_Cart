@@ -43,15 +43,14 @@ public class OderService {
                 oder1.setProduct(optionalProduct.get());
                 oder1.setQuantity(1);
                 cart.put(id, oder1);
-                log.info("add new", oder1);
+                log.info("add new"+ oder1.getProduct().getId()+" So luong ban dau "+oder1.getQuantity() );
             } else {
                 AtomicInteger count = new AtomicInteger(oder.getQuantity());
                 count.incrementAndGet();
                 oder.setQuantity(count.get());
 
                 cart.put(id, oder);
-                log.info("add có sẵn", oder.getQuantity());
-                log.info(oder.getQuantity()+"So luong");
+                log.info("add có sẵn id= "+ oder.getProduct().getId()+" So luong "+oder.getQuantity() );
             }
 
         } else {
@@ -59,6 +58,7 @@ public class OderService {
         }
 
         httpSession.setAttribute("cart", cart);
+        httpSession.setAttribute("test","test");
     }
 
 }

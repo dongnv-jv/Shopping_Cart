@@ -34,11 +34,6 @@ public class Oder {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    public void increaseQuantity() {
-        AtomicInteger count = new AtomicInteger();
-        this.quantity = count.incrementAndGet();
-
-    }
 
     public Oder(int id) {
         this.id = id;

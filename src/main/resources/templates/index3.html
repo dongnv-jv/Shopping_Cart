@@ -122,8 +122,8 @@
             margin-bottom: 45px;
         }
 
-        .btn-group-vertical>.btn-group::after,
-        .btn-group-vertical>.btn-group::before,
+        .btn-group-vertical > .btn-group::after,
+        .btn-group-vertical > .btn-group::before,
         .btn-toolbar::after,
         .btn-toolbar::before,
         .clearfix::after,
@@ -158,7 +158,7 @@
             content: " ";
         }
 
-        .btn-group-vertical>.btn-group::after,
+        .btn-group-vertical > .btn-group::after,
         .btn-toolbar::after,
         .clearfix::after,
         .container-fluid::after,
@@ -297,19 +297,19 @@
             opacity: 0;
         }
 
-        .tab-content>.tab-pane {
+        .tab-content > .tab-pane {
             display: none;
         }
 
-        .tab-content>.active {
+        .tab-content > .active {
             display: block;
         }
 
-        .tab-content>.tab-pane {
+        .tab-content > .tab-pane {
             display: none;
         }
 
-        .tab-content>.active {
+        .tab-content > .active {
             display: block;
         }
 
@@ -354,7 +354,7 @@
             color: white;
         }
 
-        .button-style-2>a {
+        .button-style-2 > a {
             padding: 10px 20px !important;
             font-weight: bold;
             color: #ffc311;
@@ -365,19 +365,19 @@
             font-size: 1.3rem;
         }
 
-        /* @media all and (min-width:576px) */
+        @media all and (min-width:576px) {
         .col-sm-6 {
             flex: 0 0 auto;
             width: 50%;
         }
-
-        /* @media all and (min-width:768px) */
+        }
+         @media all and (min-width:768px){
         .col-md-3 {
             /*display: flex;*/
             flex: 0 0 auto;
             width: 25%;
         }
-
+        }
         .col-lg-1,
         .col-lg-10,
         .col-lg-11,
@@ -448,11 +448,11 @@
             float: left;
         }
 
-        /* @media all and (min-width:768px) */
+         @media all and (min-width:768px) {
         .col-sm-6 {
             width: 50%;
         }
-
+        }
         /* @media all and (min-width:992px) */
         .col-md-1,
         .col-md-10,
@@ -483,7 +483,7 @@
             position: relative;
         }
 
-        .game>.poster {
+        .game > .poster {
             position: relative;
             margin-bottom: 15px;
         }
@@ -494,15 +494,15 @@
             margin-bottom: 10px;
         }
 
-        .game>.content>.game-title {
+        .game > .content > .game-title {
             margin-bottom: 7px;
         }
 
-        .game>.content>.game-detail {
+        .game > .content > .game-detail {
             margin-bottom: 10px;
         }
 
-        .game>.content>.summary {
+        .game > .content > .summary {
             color: #999999;
             font-size: 1.2rem;
         }
@@ -541,7 +541,7 @@
             content: "\f26c";
         }
 
-        .game>.content>.game-detail>.platform>i {
+        .game > .content > .game-detail > .platform > i {
             color: #ffc311;
             margin-right: 10px;
         }
@@ -560,13 +560,13 @@
             margin-bottom: 0px;
         }
 
-        .game>.content>.game-detail>.platform>ul>li>a {
+        .game > .content > .game-detail > .platform > ul > li > a {
             font-size: 1rem;
             text-transform: uppercase;
             color: #999999;
         }
 
-        .game>.content>.game-detail>.platform>ul>li:first-child>a::after {
+        .game > .content > .game-detail > .platform > ul > li:first-child > a::after {
             content: ",";
         }
 
@@ -576,7 +576,7 @@
             color: black;
         }
 
-        .game>.content>.game-title>a {
+        .game > .content > .game-title > a {
             color: black;
             font-family: text-font-black;
             font-size: 2.3rem;
@@ -590,13 +590,13 @@
             height: 100%;
         }
 
-        .game>.poster>.gerne {
+        .game > .poster > .gerne {
             position: absolute;
             bottom: 7%;
             right: 7%;
         }
 
-        .game>.poster>.gerne>ul {
+        .game > .poster > .gerne > ul {
             display: flex;
             margin-right: 10px;
         }
@@ -605,16 +605,16 @@
             content: "\f02c";
         }
 
-        .game>.poster>.gerne>i {
+        .game > .poster > .gerne > i {
             color: #ffc311;
             font-size: 1.2rem;
         }
 
-        .game>.poster>.gerne>ul>li a {
+        .game > .poster > .gerne > ul > li a {
             font-size: 1.2rem;
         }
 
-        .game>.poster>.gerne>ul>li:first-child>a::after {
+        .game > .poster > .gerne > ul > li:first-child > a::after {
             content: ",";
             padding-right: 5px;
         }
@@ -637,24 +637,26 @@
         }
 
         .justify-content-between {
-            justify-content: space-between !important;
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-between !important;*/
         }
 
-        .nav>li {
+        .nav > li {
             position: relative;
             display: block;
         }
 
-        .categorized-games-tab>li {
+        .categorized-games-tab > li {
             margin-right: 20px;
         }
 
-        .categorized-games-tab>li:last-child {
+        .categorized-games-tab > li:last-child {
             margin-right: 0px;
         }
 
-        .button-style-2>a:hover,
-        .active>a {
+        .button-style-2 > a:hover,
+        .active > a {
             color: white;
             background-color: #ffc311;
         }
@@ -664,7 +666,7 @@
             text-decoration: none;
         }
 
-        .nav>li>a {
+        .nav > li > a {
             position: relative;
             display: block;
             padding: 10px 15px;
@@ -677,68 +679,71 @@
 </head>
 
 <body>
-    <main>
-        <div class="container-fluid categorized-games width-90">
-            <ul class="nav categorized-games-tab d-flex justify-content-center" id="games-platform" role="tablist">
-                <li class="button-style-2 platform-btn active uppercase">
-                    <a role="tab" href="#categorized-all" data-toggle="tab">Tất cả</a>
-                </li>
-                <li class="button-style-2 platform-btn uppercase">
-                    <a role="tab" href="#categorized-origin" data-toggle="tab">Origin</a>
-                </li>
-                <li class="button-style-2 platform-btn uppercase">
-                    <a role="tab" href="#categorized-playstation" data-toggle="tab">Playstation</a>
-                </li>
-                <li class="button-style-2 platform-btn uppercase">
-                    <a role="tab" href="#categorized-steam" data-toggle="tab">Steam</a>
-                </li>
-                <li class="button-style-2 platform-btn uppercase">
-                    <a role="tab" href="#categorized-uplay" data-toggle="tab">Uplay</a>
-                </li>
-                <li class="button-style-2 platform-btn uppercase">
-<!--                    <a role="tab" href="#categorized-xbox" data-toggle="tab">Xbox one</a>-->
-
-                    <h3>Tổng số : </h3>
-
-<!--                    <div th:object="${cart}">-->
-
-<!--                        <p th:text="${cart.oder.quantity}"></p>-->
-
-<!--                    </div>-->
+<main>
+    <div class="container-fluid categorized-games width-90">
+        <ul class="nav categorized-games-tab d-flex justify-content-center" id="games-platform" role="tablist">
+            <li class="button-style-2 platform-btn active uppercase">
+                <a role="tab" href="#categorized-all" data-toggle="tab">Tất cả</a>
+            </li>
+            <li class="button-style-2 platform-btn uppercase">
+                <a role="tab" href="#categorized-origin" data-toggle="tab">Origin</a>
+            </li>
+            <li class="button-style-2 platform-btn uppercase">
+                <a role="tab" href="#categorized-playstation" data-toggle="tab">Playstation</a>
+            </li>
+            <li class="button-style-2 platform-btn uppercase">
+                <a role="tab" href="#categorized-steam" data-toggle="tab">Steam</a>
+            </li>
+            <li class="button-style-2 platform-btn uppercase">
+                <a role="tab" href="#categorized-uplay" data-toggle="tab">Uplay</a>
+            </li>
+            <li class="button-style-2 platform-btn uppercase">
+                <!--                    <a role="tab" href="#categorized-xbox" data-toggle="tab">Xbox one</a>-->
 
 
-                </li>
-            </ul>
-            <div class="tab-content categorized-games-tab-content">
-                <div class="tab-pane active" id="categorized-all" role="tabpanel">
-                    <div class="game-list d-flex flex-wrap justify-content-between"
-                    th:each="ddd,row : ${listProduct}">
-                        <div class="game col-sm-6 col-md-3">
-                            <div class="poster">
-                                <a title="Dead Space 3" href="item.html">
-                                    <img th:src="@{${ddd.images}}"/>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <div class="game-title uppercase">
-                                    <a href="#" th:text="${ddd.name}"></a>
-                                </div>
-                                <p th:text="'Cost : '+${ddd.cost}"></p>
-                                <div class="summary" th:text="${ddd.decription}">
-                                </div>
-                            </div>
-                            <div><a th:href="@{http://localhost:8080/oder(id=${ddd.id})}"> Oder</a></div>
+            </li>
+        </ul>
+
+
+        <h3>Tổng số : </h3>
+
+        <div th:each="product1 : ${productMap}">
+            <h3 style="color: green" th:text="${product1.value.product.name}"></h3>
+            <h3 style="color: green" th:text="${product1.value.quantity}"></h3>
+
+        </div>
+        <div class="tab-content categorized-games-tab-content">
+            <div class="tab-pane active" id="categorized-all" role="tabpanel">
+                <div class="game-list d-flex flex-wrap justify-content-between"
+                     th:each="ddd,row : ${listProduct}">
+                    <div class="game col-sm-6 col-md-3">
+                        <div class="poster">
+                            <a title="Dead Space 3" href="#">
+                                <img th:src="@{${ddd.images}}"/>
+                            </a>
                         </div>
-                        
-                        
+                        <div class="content">
+                            <div class="game-title uppercase">
+                                <a href="#" th:text="${ddd.name}"></a>
+                            </div>
+                            <p th:text="'Cost : '+${ddd.cost}"></p>
+                            <div class="summary" th:text="${ddd.decription}">
+                            </div>
+                        </div>
+                        <div>
+                            <a style="color: green" th:href="@{http://localhost:8080/oder(id=${ddd.id})}"> Oder</a>
+                        </div>
                     </div>
-                    <div class="button-style-2 game-list-button d-flex justify-content-center uppercase">
-                        <a href="#">Tất cả trò chơi Origin</a>
-                    </div>
+
+
+                </div>
+                <div class="button-style-2 game-list-button d-flex justify-content-center uppercase">
+                    <a href="#">Tất cả trò chơi Origin</a>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 </body>
 
 </html>
