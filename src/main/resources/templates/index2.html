@@ -510,9 +510,9 @@
             vertical-align: middle;
         }
 
-        img {
-            max-width: 100%;
-        }
+        /*img {*/
+        /*    max-width: 100%;*/
+        /*}*/
 
         .item-thumb img {
             width: 100%;
@@ -521,10 +521,10 @@
          /*@media all and (min-width:1300px) ;*/
         .product-items.row-items-desk-3 .thumb-img img,
         .product-items.row-items-desk-4 .thumb-img img {
-            min-width: 300px;
-            width: 100%;
-            min-height: 400px;
-            height: 100%;
+            /*min-width: 300px;*/
+            width: 50%;
+            /*min-height: 400px;*/
+            height: 50%;
         }
 
         .hidden {
@@ -662,28 +662,29 @@
                             <span class="product-price" th:text="${ddd.cost}"></span>
                             <div class="des"></div>
                         </div>
+                        <div class="summary" th:text="${ddd.decription}">
+                        </div>
+                        <div>
+                            <a style="color: green" th:href="@{http://localhost:8080/oder(id=${ddd.id})}"> Oder</a>
+                        </div>
                     </div>
 
 
 
 
 
+                </div>
 
 
+                <h3>Tổng số : </h3>
 
-
-
-
-
-
-
-
-
-
-
-
+                <div th:each="product1 : ${productMap}">
+                    <h3 style="color: green" th:text="${product1.value.product.name}"></h3>
+                    <h3 style="color: green" th:text="${product1.value.quantity}"></h3>
 
                 </div>
+
+
                 <div class="pagenav-wrap" style="clear: both;">
                     <div class="row">
                         <div class="col-md-5 col-sm-5" id="likeSharePage">
@@ -693,7 +694,7 @@
                         </div>
                         <div class="col-md-7 col-sm-7">
                             <div class="pull-right">
-                                <ul class="pagination">
+                                <ul class="pagination"   >
                                     <li class="active">
                                         <span>1</span>
                                     </li>

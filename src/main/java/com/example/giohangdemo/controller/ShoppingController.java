@@ -111,7 +111,7 @@ public class ShoppingController {
 //        });
 
         model.addAttribute("listProduct", listProduct);
-        return "index3";
+        return "index2";
     }
 
     @PostMapping("/delete")
