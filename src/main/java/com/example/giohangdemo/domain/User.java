@@ -40,4 +40,8 @@ public class User {
     private Date dayOfBirth;
     @OneToMany(mappedBy = "user")
     private List<Category> categories;
+
+    public User(int idUser) {
+        this.id=idUser;
+    }
 }

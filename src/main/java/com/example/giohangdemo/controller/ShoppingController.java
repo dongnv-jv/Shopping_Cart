@@ -21,7 +21,11 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 @Slf4j
 @Controller
 public class ShoppingController {
@@ -98,7 +102,7 @@ public class ShoppingController {
     }
 
     @GetMapping("/display")
-    public String getAllProduct(@RequestParam(value = "page",defaultValue = "1")  int page, Model model) {
+    public String getAllProduct(@RequestParam(value = "page", defaultValue = "1") int page, Model model) {
 
         PageRequest pageRequest = PageRequest.of(page, 8);
         Page<Product> listProduct = shoppingService.getAllProduct(pageRequest.previousOrFirst());
@@ -110,6 +114,11 @@ public class ShoppingController {
 //            log.info(ddd.getId()+"");
 //        });
 
+        List<Integer> listPage = IntStream.range(1, listProduct.getTotalPages())
+                .boxed()
+                .collect(Collectors.toList());
+
+        model.addAttribute("listPage", listPage);
         model.addAttribute("listProduct", listProduct);
         return "index2";
     }
@@ -122,7 +131,7 @@ public class ShoppingController {
 //            product.setImages("/static/images/rin.jpg");
             product.setId(i);
 
-            if(iProductRepository.findById(i).isPresent()){
+            if (iProductRepository.findById(i).isPresent()) {
                 iProductRepository.delete(product);
             }
 

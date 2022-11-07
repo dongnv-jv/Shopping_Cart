@@ -1,7 +1,10 @@
 package com.example.giohangdemo.service;
 
+import com.example.giohangdemo.domain.Category;
 import com.example.giohangdemo.domain.Oder;
 import com.example.giohangdemo.domain.Product;
+import com.example.giohangdemo.domain.User;
+import com.example.giohangdemo.repository.ICategoryRepository;
 import com.example.giohangdemo.repository.IOderRepository;
 import com.example.giohangdemo.repository.IProductRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -23,6 +26,11 @@ public class OderService {
     private IOderRepository iOderRepository;
     @Autowired
     private IProductRepository iProductRepository;
+
+
+    @Autowired
+    private ICategoryRepository iCategoryRepository;
+
 
     public void addCart(HttpSession httpSession, int id) {
         HashMap<Integer, Oder> cart;
@@ -46,23 +54,33 @@ public class OderService {
                 AtomicInteger count = new AtomicInteger(oder.getQuantity());
                 count.incrementAndGet();
                 oder.setQuantity(count.get());
-
                 cart.put(id, oder);
                 log.info("add có sẵn id= " + oder.getProduct().getId() + " So luong " + oder.getQuantity());
             }
-
         } else {
-            System.out.println(" Sản phẩm không tồn tại !");
+            log.info(" Sản phẩm không tồn tại !");
         }
 
         httpSession.setAttribute("cart", cart);
     }
 
-    public void saveCart() {
+    public void saveCart(HttpSession httpSession, User user) {
+        HashMap<Integer, Oder> cart;
 
+        var cartRaw = httpSession.getAttribute("cart");
 
+        if (cartRaw instanceof HashMap) {
+            cart = (HashMap<Integer, Oder>) cartRaw;
+            Category category = new Category(user);
+            iCategoryRepository.save(category);
+            cart.forEach((key, value) -> {
+                        value.setStatus(1);
+                        value.setCategory(category);
+                        iOderRepository.save(value);
+                    }
+            );
+        }
     }
-
     public void deleteProduct(HttpSession httpSession, int id) {
         HashMap<Integer, Oder> cart;
 
@@ -78,5 +96,6 @@ public class OderService {
 
 
     }
+
 
 }

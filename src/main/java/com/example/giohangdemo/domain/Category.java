@@ -23,4 +23,7 @@ public class Category {
     @JoinColumn(name="user_id")
     private User user;
 
+    public Category(User user) {
+        this.user = user;
+    }
 }

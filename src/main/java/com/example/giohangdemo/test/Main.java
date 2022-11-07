@@ -1,7 +1,8 @@
 package com.example.giohangdemo.test;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main {
 
@@ -18,10 +19,19 @@ public class Main {
 //        for (Map.Entry<Integer, String> entry : map.entrySet()) {
 //            System.out.println(entry.getKey() + " - " + entry.getValue());
 //        }
+        List<Integer> listPage= IntStream.range(1, 10)
+                .boxed()
+                .collect(Collectors.toList());
 
 
 
+        for (Integer aa:listPage) {
+            System.out.println(aa);
+        }
 
+//        for (int i = 1; i <= listPage.size(); i++) {
+//            System.out.println(listPage.get(i));
+//        }
 
 
     }

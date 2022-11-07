@@ -668,23 +668,12 @@
                             <a style="color: green" th:href="@{http://localhost:8080/oder(id=${ddd.id})}"> Oder</a>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-
-
                 <h3>Tổng số : </h3>
-
-                <div th:each="product1 : ${productMap}">
+                <div th:each="product1 : ${session.cart}">
                     <h3 style="color: green" th:text="${product1.value.product.name}"></h3>
                     <h3 style="color: green" th:text="${product1.value.quantity}"></h3>
-
                 </div>
-
-
                 <div class="pagenav-wrap" style="clear: both;">
                     <div class="row">
                         <div class="col-md-5 col-sm-5" id="likeSharePage">
@@ -694,26 +683,28 @@
                         </div>
                         <div class="col-md-7 col-sm-7">
                             <div class="pull-right">
-                                <ul class="pagination"   >
-                                    <li class="active">
-                                        <span>1</span>
-                                    </li>
+                                <ul class="pagination" th:each="page : ${listPage}"  >
+<!--                                    <li class="active" >-->
+<!--                                        <span  th:text="${page}" ></span>-->
+<!--                                    </li>-->
                                     <li>
                                         <a title="Quần áo nam - Trang 2"
-                                           href="http://localhost:8080/display?page=1">2</a>
+                                           th:href="@{http://localhost:8080/display(page=${page})}">
+                                            <span  th:text="${page}" ></span>
+                                        </a>
                                     </li>
-                                    <li>
-                                        <a title="Quần áo nam - Trang 3"
-                                           href="http://localhost:8080/display?page=2">3</a>
-                                    </li>
-                                    <li>
-                                        <a title="Quần áo nam - Trang 2"
-                                           href="http://localhost:8080/display?page=3">›</a>
-                                    </li>
-                                    <li>
-                                        <a title="Quần áo nam - Trang cuối"
-                                           href="http://localhost:8080/display?page=4">»</a>
-                                    </li>
+<!--                                    <li>-->
+<!--                                        <a title="Quần áo nam - Trang 3"-->
+<!--                                           href="http://localhost:8080/display?page=2">3</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a title="Quần áo nam - Trang 2"-->
+<!--                                           href="http://localhost:8080/display?page=3">›</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a title="Quần áo nam - Trang cuối"-->
+<!--                                           href="http://localhost:8080/display?page=4">»</a>-->
+<!--                                    </li>-->
                                 </ul>
                             </div>
                         </div>

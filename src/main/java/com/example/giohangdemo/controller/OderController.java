@@ -2,6 +2,8 @@ package com.example.giohangdemo.controller;
 
 import com.example.giohangdemo.domain.Oder;
 import com.example.giohangdemo.domain.Product;
+import com.example.giohangdemo.domain.User;
+import com.example.giohangdemo.repository.IUserRepository;
 import com.example.giohangdemo.service.OderService;
 import jdk.nashorn.internal.runtime.options.Option;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +30,8 @@ import java.util.Optional;
 public class OderController {
     @Autowired
     private OderService oderService;
+    @Autowired
+    private IUserRepository iUserRepository;
 
     @GetMapping("/oder")
     public String oder(@RequestParam("id") int id, HttpSession http, Model model, RedirectAttributes redirectAttrs) {
@@ -38,21 +42,27 @@ public class OderController {
         productMap.forEach((key, value) ->
                 log.info(value.getProduct().getName())
         );
-//        model.addAttribute("productMap",productMap);
-        redirectAttrs.addFlashAttribute("productMap", productMap);
+
+//        redirectAttrs.addFlashAttribute("productMap", productMap);
         return "redirect:/display";
     }
 
     @GetMapping("/oder2")
-    public String saveOder() {
+    public String saveOder(HttpSession http) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (!(authentication instanceof AnonymousAuthenticationToken)) {
             String currentUserName = authentication.getName();
             log.info(" Đã đăng nhập vs User: " + currentUserName);
-        }else{
-            log.info("Chưa đăng nhập");
-        }
+            User user = iUserRepository.findByUsername(currentUserName);
+            log.info("id user: " + user.getId());
+            oderService.saveCart(http, user);
 
-        return "redirect:/display";
+            return "redirect:/display";
+
+        } else
+            log.info("Chưa đăng nhập" + authentication.getName());
+
+
+        return "redirect:/login";
     }
 }
