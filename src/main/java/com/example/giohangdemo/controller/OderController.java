@@ -22,8 +22,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+
+import org.apache.log4j.Logger;
 
 @Controller
 @Slf4j
@@ -36,7 +39,6 @@ public class OderController {
     @GetMapping("/oder")
     public String oder(@RequestParam("id") int id, HttpSession http, Model model, RedirectAttributes redirectAttrs) {
         oderService.addCart(http, id);
-
 
         HashMap<Integer, Oder> productMap = (HashMap<Integer, Oder>) http.getAttribute("cart");
         productMap.forEach((key, value) ->
@@ -56,13 +58,30 @@ public class OderController {
             User user = iUserRepository.findByUsername(currentUserName);
             log.info("id user: " + user.getId());
             oderService.saveCart(http, user);
-
             return "redirect:/display";
-
         } else
             log.info("Chưa đăng nhập" + authentication.getName());
-
-
         return "redirect:/login";
+    }
+
+    @GetMapping("/display-oder")
+    public String displayOder(Model model) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        if (!(authentication instanceof AnonymousAuthenticationToken)) {
+            String currentUserName = authentication.getName();
+            List<Oder> listoder = oderService.displayCart(currentUserName);
+
+
+//            listoder.stream().forEach(x->{
+//
+//                log.info(x.getProduct().getName());
+//
+//            });
+            model.addAttribute("listoder", listoder);
+            model.addAttribute("username", currentUserName);
+            return "odercart";
+        }
+        return "error";
     }
 }

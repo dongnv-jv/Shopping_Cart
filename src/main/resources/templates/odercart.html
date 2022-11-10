@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h3> User : </h3>
+    <p th:text="${username}"></p>
+</div>
+<div th:each="ddd,row : ${listoder}">
+
+    <div>
+        <p th:text="${ddd.product.name}"></p>
+    </div>
+    <div>
+        <p th:text="${ddd.quantity}"></p>
+    </div>
+
+
+</div>
+</body>
+</html>

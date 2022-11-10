@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -60,7 +61,6 @@ public class OderService {
         } else {
             log.info(" Sản phẩm không tồn tại !");
         }
-
         httpSession.setAttribute("cart", cart);
     }
 
@@ -71,6 +71,7 @@ public class OderService {
 
         if (cartRaw instanceof HashMap) {
             cart = (HashMap<Integer, Oder>) cartRaw;
+
             Category category = new Category(user);
             iCategoryRepository.save(category);
             cart.forEach((key, value) -> {
@@ -81,6 +82,18 @@ public class OderService {
             );
         }
     }
+
+    public  List<Oder> displayCart(String username) {
+
+        return iOderRepository.getOder(username);
+
+    }
+
+
+
+
+
+
     public void deleteProduct(HttpSession httpSession, int id) {
         HashMap<Integer, Oder> cart;
 

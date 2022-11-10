@@ -37,11 +37,6 @@ public class ShoppingController {
     private ShoppingService shoppingService;
 
 
-//    @GetMapping("/display")
-//    public String display(){
-//        return "display";
-//    }
-
 
     @GetMapping("/upload")
     public String upload() {
@@ -123,7 +118,7 @@ public class ShoppingController {
         return "index2";
     }
 
-    @PostMapping("/delete")
+    @GetMapping("/delete")
     public ResponseEntity<?> delete() {
 
         for (int i = 1; i <= 100; i++) {
