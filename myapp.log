@@ -26480,3 +26480,189 @@ Caused by: java.lang.NullPointerException
 2022-11-10 22:07:17 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-11-10 22:07:17 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
 2022-11-10 22:07:17 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-11-11 09:07:30 INFO  GiohangdemoApplication:55 - Starting GiohangdemoApplication using Java 1.8.0_331 on Jisune with PID 7264 (C:\Users\Administrator\Desktop\giohangdemo\target\classes started by Administrator in C:\Users\Administrator\Desktop\giohangdemo)
+2022-11-11 09:07:30 INFO  GiohangdemoApplication:634 - No active profile set, falling back to 1 default profile: "default"
+2022-11-11 09:07:30 INFO  DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-11 09:07:30 INFO  DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-11 09:07:32 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 09:07:32 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 89 ms. Found 4 JPA repository interfaces.
+2022-11-11 09:07:33 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-11 09:07:33 INFO  ServletWebServerApplicationContext:292 - Root WebApplicationContext: initialization completed in 2438 ms
+2022-11-11 09:07:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 09:07:33 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 09:07:33 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 09:07:34 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-11-11 09:07:34 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-11-11 09:07:34 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-11 09:07:35 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 09:07:35 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 09:07:36 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-11 09:07:36 INFO  DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37f45978, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fcefb33, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b6e5a89, org.springframework.security.web.header.HeaderWriterFilter@18644c91, org.springframework.security.web.authentication.logout.LogoutFilter@3df0eac4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bd0b6f4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7206035e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ade1ca2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26a8153c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aadd441, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a1420da, org.springframework.security.web.session.SessionManagementFilter@6f5ad797, org.springframework.security.web.access.ExceptionTranslationFilter@561cc1c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47960e2f]
+2022-11-11 09:07:36 WARN  WebSecurity:305 - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-11 09:07:36 INFO  DefaultSecurityFilterChain:52 - Will not secure Ant [pattern='/static/**']
+2022-11-11 09:07:36 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2022-11-11 09:07:36 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 09:07:36 INFO  GiohangdemoApplication:61 - Started GiohangdemoApplication in 6.759 seconds (JVM running for 9.242)
+2022-11-11 09:07:45 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-11-11 09:07:45 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-11-11 09:07:49 WARN  PageNotFound:1282 - No mapping for GET /favicon.ico
+2022-11-11 09:09:15 INFO  OderService:53 - add new 181 So luong ban dau 1
+2022-11-11 09:09:15 INFO  OderController:45 - Melicope kaalaensis (H. St. John) T.G. Hartley & B.C. Stone
+2022-11-11 09:09:19 INFO  OderService:59 - add có sẵn id= 181 So luong 2
+2022-11-11 09:09:19 INFO  OderController:45 - Melicope kaalaensis (H. St. John) T.G. Hartley & B.C. Stone
+2022-11-11 09:09:49 INFO  OderService:53 - add new 196 So luong ban dau 1
+2022-11-11 09:09:49 INFO  OderController:45 - Descurainia pinnata (Walter) Britton ssp. pinnata
+2022-11-11 09:09:55 INFO  OderService:59 - add có sẵn id= 196 So luong 2
+2022-11-11 09:09:55 INFO  OderController:45 - Descurainia pinnata (Walter) Britton ssp. pinnata
+2022-11-11 09:10:01 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk97
+2022-11-11 09:10:01 INFO  OderController:59 - id user: 2
+2022-11-11 09:10:29 INFO  OderService:59 - add có sẵn id= 196 So luong 3
+2022-11-11 09:10:29 INFO  OderController:45 - Descurainia pinnata (Walter) Britton ssp. pinnata
+2022-11-11 09:10:38 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk97
+2022-11-11 09:10:38 INFO  OderController:59 - id user: 2
+2022-11-11 09:11:07 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 09:11:07 INFO  OderController:59 - id user: 1
+2022-11-11 09:11:10 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 09:11:10 INFO  OderController:59 - id user: 1
+2022-11-11 09:11:41 INFO  OderService:53 - add new 101 So luong ban dau 1
+2022-11-11 09:11:41 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:11:42 INFO  OderService:59 - add có sẵn id= 101 So luong 2
+2022-11-11 09:11:42 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:11:58 INFO  OderService:53 - add new 101 So luong ban dau 1
+2022-11-11 09:11:58 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:11:59 INFO  OderService:59 - add có sẵn id= 101 So luong 2
+2022-11-11 09:11:59 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:11:59 INFO  OderService:59 - add có sẵn id= 101 So luong 3
+2022-11-11 09:11:59 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:12:04 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 09:12:04 INFO  OderController:59 - id user: 1
+2022-11-11 09:12:12 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 09:12:12 INFO  OderController:59 - id user: 1
+2022-11-11 09:12:36 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 09:12:36 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-11-11 09:12:36 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-11-11 09:15:47 INFO  GiohangdemoApplication:55 - Starting GiohangdemoApplication using Java 1.8.0_331 on Jisune with PID 8456 (C:\Users\Administrator\Desktop\giohangdemo\target\classes started by Administrator in C:\Users\Administrator\Desktop\giohangdemo)
+2022-11-11 09:15:47 INFO  GiohangdemoApplication:634 - No active profile set, falling back to 1 default profile: "default"
+2022-11-11 09:15:47 INFO  DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-11 09:15:47 INFO  DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-11 09:15:48 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 09:15:48 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2022-11-11 09:15:49 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-11 09:15:49 INFO  ServletWebServerApplicationContext:292 - Root WebApplicationContext: initialization completed in 2188 ms
+2022-11-11 09:15:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 09:15:50 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 09:15:50 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 09:15:50 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-11-11 09:15:50 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-11-11 09:15:50 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-11 09:15:51 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 09:15:51 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 09:15:52 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-11 09:15:52 INFO  DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59a4dd69, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@511d3fa9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cc09b99, org.springframework.security.web.header.HeaderWriterFilter@52f30e44, org.springframework.security.web.authentication.logout.LogoutFilter@4bb1c657, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c1a3940, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@64e23b9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7023525f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52a7587d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45b6a249, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31c4f73, org.springframework.security.web.session.SessionManagementFilter@db14a97, org.springframework.security.web.access.ExceptionTranslationFilter@2a5ecee9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4acb2089]
+2022-11-11 09:15:52 WARN  WebSecurity:305 - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-11 09:15:52 INFO  DefaultSecurityFilterChain:52 - Will not secure Ant [pattern='/static/**']
+2022-11-11 09:15:53 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2022-11-11 09:15:53 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 09:15:53 INFO  GiohangdemoApplication:61 - Started GiohangdemoApplication in 6.284 seconds (JVM running for 8.005)
+2022-11-11 09:16:03 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-11-11 09:16:03 INFO  DispatcherServlet:547 - Completed initialization in 2 ms
+2022-11-11 09:16:10 INFO  OderService:54 - add new 101 So luong ban dau 1
+2022-11-11 09:16:10 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:16:10 INFO  OderService:60 - add có sẵn id= 101 So luong 2
+2022-11-11 09:16:10 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:16:22 INFO  OderService:54 - add new 101 So luong ban dau 1
+2022-11-11 09:16:22 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:16:23 INFO  OderService:60 - add có sẵn id= 101 So luong 2
+2022-11-11 09:16:23 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 09:17:09 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 09:17:09 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-11-11 09:17:09 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-11-11 10:53:56 INFO  GiohangdemoApplication:55 - Starting GiohangdemoApplication using Java 1.8.0_331 on Jisune with PID 9964 (C:\Users\Administrator\Desktop\giohangdemo\target\classes started by Administrator in C:\Users\Administrator\Desktop\giohangdemo)
+2022-11-11 10:53:56 INFO  GiohangdemoApplication:634 - No active profile set, falling back to 1 default profile: "default"
+2022-11-11 10:53:56 INFO  DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-11 10:53:56 INFO  DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-11 10:53:57 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 10:53:57 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2022-11-11 10:53:58 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-11 10:53:58 INFO  ServletWebServerApplicationContext:292 - Root WebApplicationContext: initialization completed in 2286 ms
+2022-11-11 10:53:58 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 10:53:58 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 10:53:59 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 10:53:59 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-11-11 10:53:59 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-11-11 10:53:59 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-11 10:54:00 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 10:54:00 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 10:54:01 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-11 10:54:01 INFO  DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f293023, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e65f0ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f72cbe9, org.springframework.security.web.header.HeaderWriterFilter@11dfafa7, org.springframework.security.web.authentication.logout.LogoutFilter@17cbcaf9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bc7c07c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@495d8928, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10b43a53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66387e48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b511b15, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24ffd77f, org.springframework.security.web.session.SessionManagementFilter@10cc5e97, org.springframework.security.web.access.ExceptionTranslationFilter@20fe1b3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41d92be]
+2022-11-11 10:54:01 WARN  WebSecurity:305 - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-11 10:54:01 INFO  DefaultSecurityFilterChain:52 - Will not secure Ant [pattern='/static/**']
+2022-11-11 10:54:02 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2022-11-11 10:54:02 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 10:54:02 INFO  GiohangdemoApplication:61 - Started GiohangdemoApplication in 6.608 seconds (JVM running for 8.586)
+2022-11-11 10:54:15 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-11-11 10:54:15 INFO  DispatcherServlet:547 - Completed initialization in 2 ms
+2022-11-11 10:54:17 WARN  PageNotFound:1282 - No mapping for GET /favicon.ico
+2022-11-11 10:54:21 INFO  OderService:54 - add new 101 So luong ban dau 1
+2022-11-11 10:54:21 INFO  OderController:45 - Hieracium marianum Willd.
+2022-11-11 10:54:24 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 10:54:24 INFO  OderController:59 - id user: 1
+2022-11-11 10:54:27 INFO  OderController:57 -  Đã đăng nhập vs User: dongbk
+2022-11-11 10:54:27 INFO  OderController:59 - id user: 1
+2022-11-11 10:54:47 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 10:54:48 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-11-11 10:54:48 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-11-11 14:17:39 INFO  GiohangdemoApplication:55 - Starting GiohangdemoApplication using Java 1.8.0_331 on Jisune with PID 10416 (C:\Users\Administrator\Desktop\giohangdemo\target\classes started by Administrator in C:\Users\Administrator\Desktop\giohangdemo)
+2022-11-11 14:17:39 INFO  GiohangdemoApplication:634 - No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:17:39 INFO  DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-11 14:17:39 INFO  DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-11 14:17:40 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 14:17:41 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 95 ms. Found 4 JPA repository interfaces.
+2022-11-11 14:17:41 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:17:42 INFO  ServletWebServerApplicationContext:292 - Root WebApplicationContext: initialization completed in 2937 ms
+2022-11-11 14:17:42 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 14:17:42 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 14:17:42 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 14:17:43 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-11-11 14:17:43 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-11-11 14:17:43 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-11 14:17:45 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 14:17:45 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 14:17:45 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-11 14:17:46 INFO  DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6881d526, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43fae8c9, org.springframework.security.web.context.SecurityContextPersistenceFilter@70b329ad, org.springframework.security.web.header.HeaderWriterFilter@70eeb2f5, org.springframework.security.web.authentication.logout.LogoutFilter@1771f20f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6923d7a0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4000dadd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65ca236a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446b59d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@229b93a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eb78f34, org.springframework.security.web.session.SessionManagementFilter@4aea71cf, org.springframework.security.web.access.ExceptionTranslationFilter@698c90ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51f090]
+2022-11-11 14:17:46 WARN  WebSecurity:305 - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-11 14:17:46 INFO  DefaultSecurityFilterChain:52 - Will not secure Ant [pattern='/static/**']
+2022-11-11 14:17:46 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2022-11-11 14:17:46 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:17:46 INFO  GiohangdemoApplication:61 - Started GiohangdemoApplication in 8.101 seconds (JVM running for 9.801)
+2022-11-11 14:25:54 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 14:25:54 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-11-11 14:25:54 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-11-11 14:44:27 INFO  GiohangdemoApplication:55 - Starting GiohangdemoApplication using Java 1.8.0_331 on Jisune with PID 11344 (C:\Users\Administrator\Desktop\giohangdemo\target\classes started by Administrator in C:\Users\Administrator\Desktop\giohangdemo)
+2022-11-11 14:44:27 INFO  GiohangdemoApplication:634 - No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:44:27 INFO  DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-11 14:44:27 INFO  DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-11 14:44:28 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 14:44:29 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+2022-11-11 14:44:29 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:44:29 INFO  ServletWebServerApplicationContext:292 - Root WebApplicationContext: initialization completed in 2218 ms
+2022-11-11 14:44:30 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 14:44:30 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 14:44:30 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 14:44:30 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-11-11 14:44:30 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-11-11 14:44:30 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-11 14:44:31 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 14:44:31 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 14:44:32 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-11 14:44:32 INFO  DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7233575d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c99ffd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d045113, org.springframework.security.web.header.HeaderWriterFilter@41eefefd, org.springframework.security.web.authentication.logout.LogoutFilter@3a29a4c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a509242, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f54468a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@522d3d56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@81bd14d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@466e9e81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10873d7c, org.springframework.security.web.session.SessionManagementFilter@69dcc9d8, org.springframework.security.web.access.ExceptionTranslationFilter@78d1d20, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d149469]
+2022-11-11 14:44:32 WARN  WebSecurity:305 - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-11 14:44:32 INFO  DefaultSecurityFilterChain:52 - Will not secure Ant [pattern='/static/**']
+2022-11-11 14:44:33 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2022-11-11 14:44:33 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:44:33 INFO  GiohangdemoApplication:61 - Started GiohangdemoApplication in 6.289 seconds (JVM running for 7.909)
+2022-11-11 14:44:49 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-11-11 14:44:49 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-11-11 14:48:06 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 14:48:06 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-11-11 14:48:06 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

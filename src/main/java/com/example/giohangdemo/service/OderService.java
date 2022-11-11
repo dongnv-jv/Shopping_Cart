@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 @Slf4j
-public class OderService {
+public class OderService implements Serializable {
 
     @Autowired
     private IOderRepository iOderRepository;
@@ -85,12 +86,9 @@ public class OderService {
 
     public  List<Oder> displayCart(String username) {
 
-        return iOderRepository.getOder(username);
+        return iOderRepository.findByCategory_User_Username(username);
 
     }
-
-
-
 
 
 

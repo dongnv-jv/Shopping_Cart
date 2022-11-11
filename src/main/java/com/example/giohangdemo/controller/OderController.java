@@ -1,32 +1,23 @@
 package com.example.giohangdemo.controller;
 
 import com.example.giohangdemo.domain.Oder;
-import com.example.giohangdemo.domain.Product;
 import com.example.giohangdemo.domain.User;
 import com.example.giohangdemo.repository.IUserRepository;
 import com.example.giohangdemo.service.OderService;
-import jdk.nashorn.internal.runtime.options.Option;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
-import java.security.Principal;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-
-import org.apache.log4j.Logger;
 
 @Controller
 @Slf4j
